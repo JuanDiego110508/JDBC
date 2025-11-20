@@ -1,5 +1,4 @@
-package repository;
-
+import repository.UsuariosRepository;
 import java.util.Scanner;
 
 import model.Usuarios;
@@ -55,7 +54,7 @@ public class Main {
                     Usuarios usuarioEncontrado = usuariosRepository.BuscarUsuario(nombreBuscar);
 
                     if (usuarioEncontrado != null) {
-                        System.out.println("Usuario encontrado: " + usuarioEncontrado.toString());
+                        System.out.println("\n Usuario encontrado: " + usuarioEncontrado.toString());
                     } else {
                         System.out.println("No se encontro ningun usuario con ese nombre.");
                     }

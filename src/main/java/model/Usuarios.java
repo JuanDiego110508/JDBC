@@ -29,4 +29,9 @@ public class Usuarios {
     public Long getEdad() {
         return edad;
     }
+
+    @Override
+    public String toString() {
+        return "Usuarios (Id = " + id + ", Nombre = " + nombre + ", Edad = " + edad + ")";
+    }
 }
